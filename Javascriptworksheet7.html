@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple interest calculator</title>
+    <script>
+         function mul(){
+            p=parseInt(f1.tb1.value)
+            r=parseInt(f1.tb2.value)
+            y=parseInt(f1.tb3.value)
+            si=p*r*y/100
+
+
+            document.getElementById('tb4').value=si/100;
+        }
+    </script>
+    </head>
+    <body>
+        <form id="f1">
+            Principle:<input type="text" id="tb1"><br>
+            Rate:<input type="text" id="tb2"><br>
+            Year:<input type="text" id="tb3"><br>
+           
+            <button type="button" onclick="mul()">Multiplication</button>
+            
+       
+            Result<input type="text" id="tb4">
+            </form>
+    
+    </body>
+    </html>
+
+        
+    
