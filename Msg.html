@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
+<center>
+<h2>(◕ヮ◕) Do you like strawberries?
+</h2>
+<h3>🍓Click on Ok for yes and Cancel for idk🍓</h3>
 
-<h2>Confirm Box</h2>
-
-
+<body style="background-color:rgb(239, 174, 211);"></body>
 <button onclick="myFunction()">click here</button>
 
 <p id="demo"></p>
@@ -13,13 +15,48 @@
 function myFunction() {
   var txt;
   if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
+    txt = "You pressed Yes!";
   } else {
-    txt = "You pressed Cancel!";
+    txt = "You pressed idk";
   }
   document.getElementById("demo").innerHTML = txt;
 }
 </script>
+</center>
+<style>
+  .alert {
+    padding: 20px;
+    background-color: #a9dd9d;
+    color: black;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  </style>
+<center>
+<h1>Alert Message</h1>
+
+<p>Click "x" to close the alert.</p>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+<h1> I like strawberries 🍓✨</h1>
+</div>
+<h2>(✿◕‿◕✿)</h2>
+<center>
+<p>Byeeee</p>
+</center>
 
 </body>
 </html>
